@@ -1,0 +1,19 @@
+[req]
+distinguished_name = modernwebdev.com
+x509_extensions = v3_req
+prompt = no
+[modernwebdev.com]
+C = IE
+ST = Cork
+L = Cork Airport Business Park
+O = Professional Training
+OU = Training Department
+CN = www.modernwebdev.com
+[v3_req]
+keyUsage = critical, digitalSignature, keyAgreement
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = www.modernwebdev.com
+DNS.2 = modernwebdev.com
+

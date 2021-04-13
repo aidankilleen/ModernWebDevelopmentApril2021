@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        body div {
+            background-color: red;
+        }
+        body div {
+            background-color: blue;
+        }
+        div {
+            background-color: red;
+        }
+        html body div {
+            background-color: red;
+        }
+        .coloured {
+            background-color:blue;
+        }
+        div.coloured {
+            background-color: red;
+        }
+        div.coloured:only-of-type {
+            background-color: blue;
+        }
+        /*
+        .colured.coloured.coloured.coloured {
+            background-color: red;
+        }
+        */
+        #box1 {
+            background-color: red;
+        }
+        #box1.coloured {
+            background-color: blue;
+        }
+        html body div#box1.coloured:first-of-type {
+            background-color: red;
+        }
+        div {
+            background-color:red !important;
+        }
+        div.coloured {
+            background-color: blue !important;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Specificity</h1>        
+
+    <div id="box1" class="coloured box" style="background-color:blue">
+
+    </div>
+</body>
+</html>

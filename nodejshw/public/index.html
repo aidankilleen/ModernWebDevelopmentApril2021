@@ -50,10 +50,37 @@
         .menu:focus-within .submenu {
             visibility: visible;
         }
+        .parent {
+            width: 100%;
+            height: 300px;
+            padding: 50px;
+            background-color: lightblue;
+        }
+        .child {
+            width: 50%;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        .parent:hover .child {
+            background-color: green;
+        }
+
     </style>
 </head>
 <body>
     <h1>Firebase App</h1>
+
+    <div class="parent">
+
+        <div class="child">
+            This is a child
+        </div>
+
+    </div>
+
+
+
+
 
     <h2>Hosted on Firebase</h2>
     <p id="message">Page loading...</p>

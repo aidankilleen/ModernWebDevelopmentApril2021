@@ -43,12 +43,33 @@
             -webkit-box-shadow: 5px 5px 15px 5px #000000; 
             box-shadow: 5px 5px 15px 5px #000000;
         }
+
+        .menu .submenu {
+            visibility: hidden;
+        }
+        .menu:focus-within .submenu {
+            visibility: visible;
+        }
     </style>
 </head>
 <body>
     <h1>Firebase App</h1>
+
     <h2>Hosted on Firebase</h2>
     <p id="message">Page loading...</p>
+
+    <div class="menu" tabindex="4"> 
+        <h1>Menu</h1>
+        <div class="submenu">
+            <button>1</button><br>
+            <button>2</button><br>
+            <button>3</button><br>
+        </div>
+    </div>
+
+
+
+
 
     <div class="notabutton" tabindex="5">
         This is not a button

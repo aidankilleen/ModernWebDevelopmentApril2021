@@ -1,0 +1,25 @@
+h1 {
+  color: green;
+}
+
+p {
+  color: green;
+}
+
+.content h1 {
+  color: green;
+}
+.content p {
+  color: green;
+}
+
+.box {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+/*# sourceMappingURL=sassstyles.css.map */

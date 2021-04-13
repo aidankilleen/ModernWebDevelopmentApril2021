@@ -1,0 +1,32 @@
+
+$maincolour: green;
+
+h1 {
+    color: $maincolour;
+}
+
+p {
+    color: $maincolour;
+}
+
+.content {
+    h1 {
+        color: $maincolour
+    }
+    p {
+        color: $maincolour
+    }
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+.box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    @include transform(rotate(10deg));
+}

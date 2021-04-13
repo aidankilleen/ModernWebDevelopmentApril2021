@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left{
+            float: left;
+            width: 25%;
+            height: 100px;
+            shape-outside: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%)
+        }
+        .right {
+            float: right;
+            width: 25%;
+            height: 100px;
+            shape-outside: polygon(60% 0%, 100% 0%, 100% 100%, 0% 100%);
+            transform: scaleX(-1);
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <img class="left" src="images/hand.png">
+        <img class="right" src="images/hand.png">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore tenetur nisi ratione, repudiandae reprehenderit placeat necessitatibus dolore accusantium error animi quod reiciendis sunt dicta sed? Repellat alias impedit dolorum natus.</p>
+    </div>
+</body>
+</html>

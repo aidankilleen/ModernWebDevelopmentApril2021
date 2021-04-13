@@ -12,19 +12,55 @@
         h2 {
             color: green;
         }
-        table tbody tr:nth-child(3) td:nth-child(1) {
+        .datatable {
+            width: 100%;
+            border: 1px solid black;
+        }
+        .datatable thead {
+            background-color: lightgreen;
+        }
+        .datatable tbody tr td:first-child {
+            background-color: lightblue;
+        }
+        .datatable tbody tr:nth-child(3) td:nth-child(2) {
+            background-color: lightcoral;
+        }
+        .datatable tbody tr:nth-child(3) td:nth-child(2):hover {
             background-color: red;
         }
-
+        #message {
+            color: red;
+            background-color: lightblue;
+        }
+        .button:focus {
+            font-weight: bold;
+        }
+        .notabutton {
+            width: 200px;
+            height: 75px;
+            border-radius: 4px;
+            border: 1px solid black;
+            -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+            box-shadow: 5px 5px 15px 5px #000000;
+        }
     </style>
 </head>
 <body>
     <h1>Firebase App</h1>
     <h2>Hosted on Firebase</h2>
     <p id="message">Page loading...</p>
+
+    <div class="notabutton" tabindex="5">
+        This is not a button
+    </div>
+
+    <hr>
+
     <img src="./images/modernweb.jpg" width="200">
 
-    <table>
+    <button class="button">Press Me</button>
+
+    <table class="datatable">
         <thead>
             <tr>
                 <th>1</th><th>2</th><th>3</th>

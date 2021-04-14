@@ -124,6 +124,36 @@ answer = data.filter(quantityGreaterThan100).reduce(calcTotalQuantity);
 
 console.log(answer);
 
+// you can get at a property using [] and the name of the property
+// the name can be in a variable as below:
+c = "green";
+let o = {
+    red:1, 
+    green:2, 
+    blue:3
+}
+console.log(o.red);
+console.log(o[c]);
+
+console.log("===================================");
+
+
+let colourTotals = data.reduce((runningTotals, item)=>{
+    if (runningTotals[item.colour]) {
+        // not the first item of this colour - add quantity to total
+        runningTotals[item.colour] += item.quantity;
+    } else {
+        // first item of this colour - set quantity to total
+        runningTotals[item.colour] = item.quantity;
+    }
+    return runningTotals;
+}, {});
+
+console.log(colourTotals);
+
+
+
+
 
 
 

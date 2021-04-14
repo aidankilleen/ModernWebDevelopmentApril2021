@@ -137,7 +137,6 @@ console.log(o[c]);
 
 console.log("===================================");
 
-
 let colourTotals = data.reduce((runningTotals, item)=>{
     if (runningTotals[item.colour]) {
         // not the first item of this colour - add quantity to total
@@ -151,10 +150,40 @@ let colourTotals = data.reduce((runningTotals, item)=>{
 
 console.log(colourTotals);
 
+console.log("=====================================");
 
+let quantities = data.map((item)=>{
+    return item.quantity;
+});
 
+console.log(quantities);
 
+let subset = data.map(item=>{
+    return {
+        name: item.name, 
+        quantity: item.quantity
+    }
+});
 
+console.log(subset);
+
+console.log("------------------------------");
+let dataWithYear = data.map(item => {
+
+    let dt = new Date(item.date);
+
+    return {
+        year: dt.getFullYear(), 
+        month: dt.getMonth() + 1, 
+        ym: `${dt.getFullYear()}${('0' + dt.getMonth() + 1).slice(-2)}`,  // YYYYMM
+        ...item
+    }
+});
+
+// m=1  ->     01     -> 01
+// m=12 ->    012     -> 12
+
+console.log(dataWithYear);
 
 
 

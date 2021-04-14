@@ -92,6 +92,40 @@ data.filter(item=>item.quantity >= 100)
     .sort((a, b)=> a.quantity - b.quantity)
     .forEach(item=>console.log(`${item.quantity}, ${item.name}`));
 
+console.log("-------------------------------");
+let sortByQuantityAscending = (a, b) => a.quantity - b.quantity;
+let displayNameAndQuantity = item => console.log(`${item.quantity}, ${item.name}`);
+let quantityGreaterThan100 = item => item.quantity > 100;
+
+data.filter(quantityGreaterThan100).sort(sortByQuantityAscending).forEach(displayNameAndQuantity);
+
+// get the total quantity
+let answer = data.reduce((runningTotal, item, index) => {
+    console.log(`processing item ${index}`);
+    console.log(`${item.quantity}`);
+    console.log(`${runningTotal + item.quantity}`);
+    return runningTotal + item.quantity;
+}, 0);
+
+// answer should be the sum of the values
+console.log(answer);
+
+answer = data.reduce((runningTotal, item) => runningTotal+item.quantity, 0);
+
+console.log(answer);
+
+let calcTotalQuantity = (runningTotal, item) => runningTotal + item.quantity;
+
+answer = data.reduce(calcTotalQuantity, 0);
+
+console.log(answer);
+
+answer = data.filter(quantityGreaterThan100).reduce(calcTotalQuantity);
+
+console.log(answer);
+
+
+
 
 
 

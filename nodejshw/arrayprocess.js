@@ -120,7 +120,8 @@ answer = data.reduce(calcTotalQuantity, 0);
 
 console.log(answer);
 
-answer = data.filter(quantityGreaterThan100).reduce(calcTotalQuantity);
+answer = data.filter(quantityGreaterThan100)
+            .reduce(calcTotalQuantity);
 
 console.log(answer);
 

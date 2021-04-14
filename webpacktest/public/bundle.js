@@ -1,0 +1,1 @@
+(()=>{"use strict";let t=0;const e=function(){t++,console.log(`clicked:${t}`),10==t&&(alert("You Win!"),t=0)};document.getElementById("button").addEventListener("click",(function(){e()}))})();

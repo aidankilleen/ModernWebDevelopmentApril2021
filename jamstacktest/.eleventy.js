@@ -13,7 +13,29 @@ module.exports = function(config) {
                 <p>${ section.text }</p>
             </section>`;
 
-        } else {
+        } else if (section.type == "imageWithText") {
+
+            let list = section.list.map(item=>`<li>${item}</li>`).join("");
+
+            return `<section class="section" id="${section.id}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col"><h2>${section.title}</h2></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                ${list}
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="${section.image}" width="400">
+                            </div>
+                        </div>
+                    </div>
+                </section>`;
+        
+        }else {
             return `<section class="section" id="${section.id}">
                 <h1>${ section.title}</h1>
                 <p>${ section.text }</p>

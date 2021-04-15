@@ -11,8 +11,11 @@ html {
     height: 100vh;
     scroll-margin-top: 3.0rem;
 }
+.section:nth-child(odd) {
+    background-color: var(--primaryColour);
+}
 .section:nth-child(even) {
-    background-color: lightgreen;
+    background-color: var(--secondaryColour);
 }
 #main-nav {
     position: sticky;

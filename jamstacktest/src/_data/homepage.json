@@ -7,7 +7,12 @@
             "text": "for all your training needs", 
             "image": "/images/hero.jpg" }, 
         { "id": "section2", "type":"grid", "title": "Section 2", "text":"some text about section 2"}, 
-        { "id": "section3", "type":"text", "title": "Section 3", "text":"some text about section 3"}, 
+        { "id": "section3", 
+            "type":"imageWithText", 
+            "title": "Section 3", 
+            "text":"some text about section 3", 
+            "image": "/images/viewdata.svg", 
+            "list": ["one", "two", "three", "four"]}, 
         { "id": "section4", "type":"tesimonial", "title": "Section 4", "text":"some text about section 4"}
     ]
 }

@@ -15,10 +15,8 @@ Welcome to the Professional Training Website
 
 {% for section in sections %}
 
-## {{ section.title }}
-{{ section.text | makeSection }}
-
-    
+{{ section | makeSection | safe }}
+   
 {% endfor %}
 
 

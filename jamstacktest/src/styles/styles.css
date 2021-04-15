@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .footer {
     width: 100%;
     bottom: 0;
@@ -6,7 +9,13 @@
 
 .section {
     height: 100vh;
+    scroll-margin-top: 3.0rem;
 }
 .section:nth-child(even) {
     background-color: lightgreen;
+}
+#main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }

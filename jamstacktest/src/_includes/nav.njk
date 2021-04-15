@@ -11,6 +11,9 @@
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
 
+            {% for section in index.sections %}
+              <li>section.name</li>
+            {% endfor %}
             {% for page in collections.main %}
             <li class="nav-item">
               <a class="nav-link" href="{{ page.url }}">{{ page.data.title }}</a>

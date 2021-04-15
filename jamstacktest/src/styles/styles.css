@@ -1,6 +1,12 @@
 .footer {
     width: 100%;
-    position: absolute;
     bottom: 0;
     text-align: center;
+}
+
+.section {
+    height: 100vh;
+}
+.section:nth-child(even) {
+    background-color: lightgreen;
 }

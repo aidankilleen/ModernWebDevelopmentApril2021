@@ -4,7 +4,7 @@ module.exports = function(config) {
 
     config.addFilter('makeSection', function(section) {
 
-        return `<section class="section">
+        return `<section class="section" id="${section.id}">
                     <h1>${ section.title}</h1>
                     <p>${ section.text }</p>
                 </section>`;

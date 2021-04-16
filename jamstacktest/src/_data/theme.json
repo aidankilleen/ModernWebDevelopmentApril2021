@@ -1,5 +1,10 @@
+
+
+
+
 {
-    "primaryColour": "lightblue", 
-    "secondaryColour": "lightgreen", 
+    "primaryColour": "blue", 
+    "secondaryColour": "lightblue", 
+    "ternaryColour": "lightgreen", 
     "backgroundColour": "lightgray"
 }

@@ -11,7 +11,7 @@
             "type":"imageWithText", 
             "title": "Section 3", 
             "text":"some text about section 3", 
-            "image": "/images/viewdata.svg", 
+            "image": "/svg/viewdata.svg", 
             "list": ["one", "two", "three", "four"]}, 
         { "id": "section4", "type":"tesimonial", "title": "Section 4", "text":"some text about section 4"}
     ]

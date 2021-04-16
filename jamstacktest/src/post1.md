@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Blog post 1
+title: Interesting Blog Post
 tags: [posts]
 ---
 

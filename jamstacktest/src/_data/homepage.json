@@ -5,7 +5,7 @@
             "type":"hero", 
             "title": "Professional Training", 
             "text": "for all your training needs", 
-            "image": "/images/hero.jpg" }, 
+            "image": "https://res.cloudinary.com/www-gsuitescript-com/image/upload/c_scale,q_56,w_1200/v1618566495/modernweb/hero_yboau2.jpg" }, 
         { "id": "section2", "type":"grid", "title": "Section 2", "text":"some text about section 2"}, 
         { "id": "section3", 
             "type":"imageWithText", 
